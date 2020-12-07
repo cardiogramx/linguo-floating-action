@@ -6,7 +6,7 @@
         var link = document.createElement("link");
         link.type = "text/css";
         link.rel = "stylesheet";
-        link.href = "public/demo/linguo.fab.css";
+        link.href = "https://www.linguoapis.com/linguofab/linguo.fab.css";
         document.head.prepend(link);
 
         var script = document.createElement('script');
@@ -71,7 +71,7 @@
 
         $('#male').on('click', function () {
             $.ajax({
-                url: 'https://localhost:5001/api/v1/Speech/GetAudioFromText',
+                url: 'https://www.linguoapis.com/api/v1/Speech/GetAudioFromText',
                 method: 'POST',
                 contentType: 'application/json',
                 dataType: 'binary',
@@ -100,7 +100,7 @@
 
         $('#female').on('click', function () {
             $.ajax({
-                url: 'https://localhost:5001/api/v1/Speech/GetAudioFromText',
+                url: 'https://www.linguoapis.com/api/v1/Speech/GetAudioFromText',
                 method: 'POST',
                 contentType: 'application/json',
                 dataType: 'binary',
